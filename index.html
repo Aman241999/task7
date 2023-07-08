@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form{
+            background-color: aquamarine;
+            text-align: center;
+            border: 1px solid antiquewhite;
+        }
+        h1{
+            border: 100px green;
+            background-color: greenyellow;
+            color: brown;
+            text-align: center;
+            
+
+        }
+    </style>
 </head>
 <body style="background-color: powderblue;">
-    <form  style="text-align: center;" onsubmit="saveToLocalStorage(event)" >
+    <h1> Booking appointment App</h1>
+    <form   onsubmit="saveToLocalStorage(event)" >
         <label>Name:</label><br>
         <input type="text" placeholder="Enter your name..." name="Username" required/><br>
         <label>Email id:</label><br>
