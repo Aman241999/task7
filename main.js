@@ -22,12 +22,17 @@ function saveToLocalStorage(event) {
 
     let deleteButton = document.createElement('button');
   deleteButton.textContent = 'Delete';
+  let Editbutton=document.createElement("Button");
+  Editbutton.textContent="Edit";
   deleteButton.addEventListener('click', function() {
     removeFromLocalStorage(obj.email);
     parentItem.removeChild(li);
+   
   });
 
   li.appendChild(deleteButton);
+  parentItem.appendChild(li);
+  li.appendChild(Editbutton);
   parentItem.appendChild(li);
   }
   function removeFromLocalStorage(email) {
